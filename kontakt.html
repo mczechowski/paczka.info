@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kartony, taśmy, folie, wypełniacze...">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script async src="https://use.fontawesome.com/928ac8ac08.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <title>paczka.info | Kartony, taśmy, folie, wypełniacze</title>
+</head>
+<body>
+
+    <header id="includeHeader"></header>
+
+    <main class="contact__containter">
+        <section class="contact__header">
+            <h2>KONTAKT</h2>
+        </section>
+
+        <div class="contact__row">
+
+            <section class="contact__info">
+                <h3>Adres:</h3>
+                <p>Dział handlowy i biuro</p>
+                <p>ul. M. Ogińskiego 6b</p>
+                <p>96-317 Guzów</p>
+            
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-phone fa-lg" aria-hidden="true"></i>665 070 280</li>
+                    <li><i class="fa-li fa fa-envelope fa-lg" aria-hidden="true"></i>biuro@paczka.info</li>
+                </ul>
+                <div id="map"></div>
+            </section>
+
+            <section class="contact__form">
+                <form action="contact.php" method="post" enctype="text/plain">
+                    <input type="text" name="ImieNazwisko" placeholder="Imię i Nazwisko / Nazwa Firmy:" autofocus>
+                    <input type="email" name="email" placeholder="Email *" required>
+                    <textarea rows="10" name="message" placeholder="Treść wiadomości... *" required></textarea>
+                    <input class="button" name="submit" type="submit" value="Wyślij">
+                </form>
+            </section>
+    
+        </div>
+    </main>
+ 
+    <footer>
+        <p class="copy">Copyright &copy; 2017 paczka.info</p>
+    </footer>
+
+    <script>
+        $("#includeHeader").load("html/header.html");
+    </script> 
+    <script async src="js/map_bright.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAweQo9wPdrYWLj5am1hkWRHSO14UnKTJQ&callback=initMap"></script>
+</body>
+</html>
