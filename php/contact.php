@@ -19,7 +19,7 @@ $title = "Wiadomość z formularza na stronie paczka.info";
 
 // Treść wiadomości
 $wiadomosc = "";
-$wiadomosc .= "Imie i nazwisko: " . $name . "\n";
+$wiadomosc .= "Imie Nazwisko / Nazwa firmy: " . $name . "\n";
 $wiadomosc .= "Email: " . $email . "\n";
 $wiadomosc .= "Wiadomość: " . $message . "\n";
 
@@ -32,11 +32,11 @@ $header .= "Content-Type:text/plain;charset=utf-8";
 $success = mail($destynationMail, $title, $message, $header);
 
 // Przekierowywujemy na potwierdzenie
-if ($succces){
+if ($success){
         print "<meta http-equiv=\"refresh\" content=\"0;URL=potwierdzenie.php\">";
     }
 else{
     print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
     }
-    
+
 ?>

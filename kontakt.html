@@ -39,8 +39,9 @@
 
             <section class="contact__form">
                 <form action="php/contact.php" method="post" enctype="text/plain">
-                    <input type="text" name="ImieNazwisko" placeholder="Imię i Nazwisko / Nazwa Firmy:" autofocus>
-                    <input type="email" name="email" placeholder="Email *" required>
+                    <input type="text" name="ImieNazwisko" placeholder="Imię Nazwisko / Nazwa firmy:" autofocus>
+                    <input type="text" name="phone" placeholder="Nr telefonu:" minlength="9" maxlength="14">
+                    <input type="email" name="email" placeholder="Email: *" required>
                     <textarea rows="10" name="message" placeholder="Treść wiadomości... *" required></textarea>
                     <input class="button" name="submit" type="submit" value="Wyślij">
                 </form>

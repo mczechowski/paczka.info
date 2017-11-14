@@ -154,18 +154,48 @@ header .main__header {
 
 /*---------------------------- HOME PAGE -------------------------------*/
 .banner {
-  background: yellow;
+  background-color: #cccccc;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner-backgr.jpg") center;
   margin-top: 2rem;
-  padding: 3rem;
+  display: flex;
+}
+
+@media only screen and (max-width: 578px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.banner div {
+  text-align: center;
+  width: 33%;
+  margin: 8rem 3rem;
+}
+
+@media only screen and (max-width: 870px) {
+  .banner div {
+    margin: 6rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .banner div {
+    margin: 4rem 1rem;
+    width: 90%;
+  }
 }
 
 .banner p {
-  padding-top: 2rem;
+  margin-top: 4rem;
   font-size: 2rem;
+  color: #E1E1E1;
+  font-weight: 300;
 }
 
-.banner p i {
-  margin-right: 2rem;
+.banner i {
+  color: #E1E1E1;
+  font-size: 4rem;
 }
 
 .category {
