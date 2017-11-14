@@ -1,6 +1,6 @@
 <?php
 // Zmienna dla Imienia i nazwiska
-$name = $_POST['ImieNazwisko'];
+$name = $_POST["ImieNazwisko"];
 
 // Zmienna dla telefonu
 $phone = $_POST['phone'];
@@ -23,7 +23,7 @@ $title = "Wiadomość z formularza na stronie paczka.info";
 // Treść wiadomości
 $wiadomosc = "";
 $wiadomosc .= "Imie Nazwisko / Nazwa firmy: " . $name . "\n";
-$wiadomosc .= "Telefon: " . $phone . "/n";
+$wiadomosc .= "Telefon: " . $phone . "\n";
 $wiadomosc .= "Email: " . $email . "\n";
 $wiadomosc .= "Wiadomość: " . $message . "\n";
 
