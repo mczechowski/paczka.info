@@ -2,6 +2,9 @@
 // Zmienna dla Imienia i nazwiska
 $name = $_POST['ImieNazwisko'];
 
+// Zmienna dla telefonu
+$phone = $_POST['phone'];
+
 // Zmienna dla adresu email
 $email = $_POST['email'];
 
@@ -20,6 +23,7 @@ $title = "Wiadomość z formularza na stronie paczka.info";
 // Treść wiadomości
 $wiadomosc = "";
 $wiadomosc .= "Imie Nazwisko / Nazwa firmy: " . $name . "\n";
+$wiadomosc .= "Telefon: " . $phone . "/n";
 $wiadomosc .= "Email: " . $email . "\n";
 $wiadomosc .= "Wiadomość: " . $message . "\n";
 
@@ -29,7 +33,7 @@ $header .= "Od: " . $sourceMail . "\n";
 $header .= "Content-Type:text/plain;charset=utf-8";
 
 // Wysłanie wiadomości
-$success = mail($destynationMail, $title, $message, $header);
+$success = mail($destynationMail, $title, $wiadomosc, $header);
 
 // Przekierowywujemy na potwierdzenie
 if ($success){
