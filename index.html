@@ -20,6 +20,10 @@
                 <h3>Kartony, taśmy, folie, wypełniacze...</h3>
             </div>
         
+            <div class="hamburger">
+                <a class="bar" href="#"></a>   
+            </div>
+           
             <nav class="main__menu">
                 <ul>
                     <li class="sub__menu__parent">
@@ -41,6 +45,13 @@
                 </ul>
             </nav>
         </div>
+
+        <script>
+            document.querySelector(".hamburger").addEventListener("click", function() {
+                this.classList.toggle("active");
+                document.querySelector('.main__menu').classList.toggle("active");
+            }); 
+        </script>
     </header>
 
     <main>

@@ -77,44 +77,113 @@ header{
     }
 }
 
+/*------------- hamburger button mobile ------------------- */
+$hamburgervw: 3.3rem;
+$hamburgerThick: 5px;
+
+.hamburger {
+    width: $hamburgervw;
+    height: 3rem;
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    margin: auto;
+    cursor: pointer;  
+    @media screen and (min-width: 870px){
+        display: none;
+    }  
+    @media screen and (max-width: 400px){
+        right: 2rem;
+    }
+}
+
+.bar {
+    display: block;
+    background:$lightgray;
+    width: $hamburgervw;
+    height: $hamburgerThick;
+    transition: all .2s ease-in;
+}
+
+.bar::before{
+    content: '';
+    background: $lightgray;
+    width: $hamburgervw;
+    height: $hamburgerThick;
+    position: absolute;
+    top: -10px;
+    transition: all .3s ease-in;
+}
+
+.bar::after{
+    content: '';
+    background: $lightgray;
+    width: $hamburgervw;
+    height: $hamburgerThick;
+    position: absolute;
+    top: 10px;
+    transition: all .2s ease-in;
+}
+
+.hamburger:hover .bar {
+    transform: scale(1.1);
+}
+
+.hamburger.active .bar{
+    transform:  rotate(-45deg);
+    top:0;
+}
+.hamburger.active .bar::before{
+    transform: rotate(90deg);
+    top: 0;
+}
+.hamburger.active .bar::after{
+    opacity: 0;
+}
+
+
+/* ----------end hamburger menu mobile----------------- */
+
+
 .main__menu{
     display: block;
     position: absolute;
     right: 3rem;
     top: 40%;
     
-    .sub__menu__parent{
-        position: relative;
-
-        &:hover .sub__menu {
-            display: block;
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(2rem);            
-        }
-
-        .sub__menu{
-            display: block;
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            left: 2rem;
-            margin-top: -2rem;
-            padding-top: 3rem;
-            width: 100%;
-            background: $headfoot;
-            padding-right: 2rem;
-            min-width: 25rem;
-            transition: all .3s ease-out;     
-            
-            li{
-                padding-left: 3rem;
-                padding-bottom: 1.5rem;
-                text-align: left;
+    @media screen and (min-width: 870px){
+        .sub__menu__parent{
+            position: relative;
+            &:hover .sub__menu {
+                display: block;
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(2rem);            
             }
-        }
-    }
     
+            .sub__menu{
+                display: block;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                left: 2rem;
+                margin-top: -2rem;
+                padding-top: 3rem;
+                width: 100%;
+                background: $headfoot;
+                padding-right: 2rem;
+                min-width: 25rem;
+                transition: all .3s ease-out;     
+                
+                li{
+                    padding-left: 3rem;
+                    padding-bottom: 1.5rem;
+                    text-align: left;
+                }
+            }
+        } 
+    }
+
     ul{
         display: flex;
         list-style: none;
@@ -133,9 +202,40 @@ header{
                     color: $hovercolor;
                 }
             }
-
         }  
     }
+
+    @media screen and (max-width: 871px){
+        visibility: hidden;
+        margin-right: -3rem;
+        left: 0;
+        top: 100%;
+        background: $headfoot;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all .3s ease-out;
+
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible; 
+        }
+
+        ul{
+            padding: 1rem;
+            display: block;
+
+            li{
+                padding: 0;
+                line-height: 2.5;
+            }
+        }
+        .sub__menu__parent{
+            display: none;
+        }
+    } 
+
+
     a{
         text-decoration: none;
         color: $lightgray;
@@ -144,7 +244,11 @@ header{
             color: $hovercolor;
         }
     }
+    .hamburger:focus ~ .main__menu{
+        transform: translatey(0);
+    }
 }
+
 
 /*---------------------------- HOME PAGE -------------------------------*/
 
