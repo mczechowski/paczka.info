@@ -211,7 +211,7 @@ header .main__header {
   color: #ec9821;
 }
 
-@media screen and (max-width: 871px) {
+@media screen and (max-width: 869px) {
   .main__menu {
     visibility: hidden;
     margin-right: -3rem;
@@ -220,7 +220,7 @@ header .main__header {
     background: #3f3f3f;
     opacity: 0;
     transform: translateY(-100%);
-    transition: all .3s ease-out;
+    transition: opacity .3s ease-out, transform .3s ease-out;
   }
   .main__menu.active {
     opacity: 1;

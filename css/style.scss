@@ -205,7 +205,7 @@ $hamburgerThick: 5px;
         }  
     }
 
-    @media screen and (max-width: 871px){
+    @media screen and (max-width: 869px){
         visibility: hidden;
         margin-right: -3rem;
         left: 0;
@@ -213,7 +213,7 @@ $hamburgerThick: 5px;
         background: $headfoot;
         opacity: 0;
         transform: translateY(-100%);
-        transition: all .3s ease-out;
+        transition: opacity .3s ease-out, transform .3s ease-out; 
 
         &.active {
             opacity: 1;
