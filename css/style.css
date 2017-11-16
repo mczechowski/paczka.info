@@ -568,7 +568,13 @@ main.contact__containter {
 
 @media screen and (max-width: 768px) {
   .contact__row .contact__form {
-    width: 90%;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .contact__row .contact__form {
+    width: 100%;
   }
 }
 
@@ -624,6 +630,7 @@ main.contact__containter {
   .contact__row .contact__info {
     width: 90%;
     margin: 0 0 5rem 0;
+    padding: 2rem;
   }
 }
 
@@ -656,6 +663,13 @@ main.contact__containter {
   }
   .contact__row .contact__info .mobile ul {
     padding-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact__row .contact__info .mobile {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

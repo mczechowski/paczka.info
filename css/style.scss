@@ -546,7 +546,11 @@ main.contact__containter{
         width: 50%;
 
         @media screen and (max-width: 768px) { 
-            width: 90%;
+            width: 95%;
+        }
+
+        @media screen and (max-width: 530px) { 
+            width: 100%;
         }
 
         input{
@@ -598,9 +602,9 @@ main.contact__containter{
         @media screen and (max-width: 768px) { 
             width: 90%;
             margin: 0 0 5rem 0;
+            padding: 2rem;
         }
-
-        
+      
         h3{
             padding-bottom: 1rem;
             font-size: 2.5rem;
@@ -626,11 +630,15 @@ main.contact__containter{
         .mobile {
             @media screen and (max-width: 768px) { 
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-around;                
 
                 ul {
                     padding-top: 4rem;
                 }
+            }
+            @media screen and (max-width: 480px){
+                flex-wrap: wrap;
+                justify-content: center;  
             }
         }
         
