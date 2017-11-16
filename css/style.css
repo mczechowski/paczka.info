@@ -555,8 +555,21 @@ main.contact__containter {
   padding: 5rem 0;
 }
 
+@media screen and (max-width: 768px) {
+  .contact__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .contact__row .contact__form {
   width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__row .contact__form {
+    width: 90%;
+  }
 }
 
 .contact__row .contact__form input {
@@ -607,6 +620,13 @@ main.contact__containter {
   padding: 2rem 4rem;
 }
 
+@media screen and (max-width: 768px) {
+  .contact__row .contact__info {
+    width: 90%;
+    margin: 0 0 5rem 0;
+  }
+}
+
 .contact__row .contact__info h3 {
   padding-bottom: 1rem;
   font-size: 2.5rem;
@@ -627,6 +647,16 @@ main.contact__containter {
   font-size: 1.6rem;
   line-height: 1.6;
   padding-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__row .contact__info .mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact__row .contact__info .mobile ul {
+    padding-top: 4rem;
+  }
 }
 
 .contact__row .contact__info #map {
