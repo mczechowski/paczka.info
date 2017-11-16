@@ -398,8 +398,23 @@ footer .footer__contact {
   padding-bottom: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  footer .footer__contact {
+    padding-top: 4rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
 footer .footer__contact .address {
-  padding-left: 3%;
+  margin: 0 3rem;
+  min-width: 15rem;
+}
+
+@media screen and (max-width: 396px) {
+  footer .footer__contact .address {
+    margin: 0 1rem;
+  }
 }
 
 footer .footer__contact .address p {
@@ -407,11 +422,29 @@ footer .footer__contact .address p {
   margin: 0;
 }
 
+footer .footer__contact .contact {
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 355px) {
+  footer .footer__contact .contact {
+    padding-left: 1rem;
+    padding-top: 3rem;
+  }
+}
+
 footer #map {
   width: 50%;
   height: 25rem;
   margin-top: -3rem;
   margin-bottom: -2rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer #map {
+    margin-top: 4rem;
+    width: 100%;
+  }
 }
 
 footer h3 {

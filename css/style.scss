@@ -388,21 +388,43 @@ footer{
         color: $footertextcolor;
         padding-top: 3rem;
         padding-bottom: 2rem;
+        @media screen and (max-width: 768px){
+            padding-top: 4rem;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
         .address {
-            padding-left: 3%;
+            margin: 0 3rem;
+            min-width: 15rem;
+            @media screen and (max-width: 396px){
+                margin: 0 1rem;
+            }
 
             p{
                 line-height: 1.6;
                 margin: 0;
             }
         }
+
+        .contact{
+            margin: 0 1rem;
+            @media screen and (max-width: 355px){
+                padding-left: 1rem;
+                padding-top: 3rem;
+            }
+        }
     }
+    
     #map {
         width: 50%;
         height: 25rem;
         margin-top: -3rem;
         margin-bottom: -2rem;
+        @media screen and (max-width: 768px){
+            margin-top: 4rem;
+            width: 100%;
+        }
     }
     
     h3{
