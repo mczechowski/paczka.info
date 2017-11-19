@@ -472,6 +472,7 @@ footer{
 .sub__category {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background: #dfdfdf;
     margin-top: 4rem;
     padding-bottom: 7rem;
