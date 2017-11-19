@@ -526,6 +526,12 @@ footer .copy {
   border-radius: .3rem;
 }
 
+/*----------------------------- art-wyprzedarzowe.html ----------------------------*/
+main.empty__containter {
+  min-height: calc(100vh - 28.8rem);
+  box-sizing: border-box;
+}
+
 /*----------------------------- kontakt.html---------------------------------------*/
 main.contact__containter {
   min-height: calc(100vh - 3.8rem);
@@ -714,6 +720,12 @@ main.contact__containter {
   margin-top: 4rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .sitebar {
+    display: none;
+  }
+}
+
 .product {
   display: block;
   margin: 0 auto;
@@ -738,11 +750,25 @@ main.contact__containter {
   margin-left: 24rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .product__item {
+    margin-left: 0;
+  }
+}
+
 .product__item img {
   float: left;
   height: auto;
   width: 17rem;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .product__item img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .product__item a {
