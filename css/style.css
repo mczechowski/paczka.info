@@ -373,7 +373,6 @@ header .main__header {
 /*-------------------------- FOOTER ------------------------------ */
 footer {
   background: #3f3f3f;
-  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -391,6 +390,8 @@ footer i {
 }
 
 footer .footer__contact {
+  max-width: 1600px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   color: #999999;
@@ -528,7 +529,7 @@ footer .copy {
 }
 
 /*----------------------------- art-wyprzedarzowe.html ----------------------------*/
-main.empty__containter {
+main.tooSmall__containter {
   min-height: calc(100vh - 28.8rem);
   box-sizing: border-box;
 }

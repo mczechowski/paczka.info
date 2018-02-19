@@ -366,7 +366,7 @@ $hamburgerThick: 5px;
 
 footer{
     background:  $headfoot;
-    max-width: 1600px;
+    
     margin: 0 auto;
    
     li{
@@ -383,6 +383,8 @@ footer{
     }
 
     .footer__contact{
+        max-width: 1600px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         color: $footertextcolor;
@@ -512,7 +514,7 @@ footer{
 
 /*----------------------------- art-wyprzedarzowe.html ----------------------------*/
 
-main.empty__containter{
+main.tooSmall__containter{
     min-height: calc(100vh - 28.8rem);
     box-sizing: border-box;
 }
