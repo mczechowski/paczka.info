@@ -668,6 +668,33 @@ main.contact__containter{
 
 .product__content{
     position: relative;
+
+    a{
+        text-decoration: none;
+        color: $darkgray;
+        font-size: 1.5rem;
+        width: 16rem;
+        text-align: center;
+        font-weight: 400;
+
+        i{
+            padding-right: .7rem;
+        }
+
+        &.button{
+            margin-top: 1rem;
+            display: inline-block;
+            padding: 1rem;
+            border: 1px solid $buttoncolor;
+            border-radius: 3px;
+            transition: all .4s ease-out;
+            &:hover{
+                background: $buttoncolor;
+                font-size: 1.6rem;
+                color: white;
+            }
+        }
+    }
 }
 .product__category__description {
     color: $darkgray;
@@ -687,6 +714,7 @@ main.contact__containter{
         margin-bottom: 1.5rem;
         line-height: 1.4;
     }
+    
 }
 
 .sitebar{
@@ -725,8 +753,20 @@ main.contact__containter{
    // height: 15rem;
     border-radius: .3rem;
     margin-left: 24rem;
+    font-size: 1.5rem;
     @media screen and(max-width: 1000px) {
         margin-left: 0;
+    }
+    h2{
+        padding-bottom: 1.5rem;
+    }
+    p{
+        padding-bottom: 1rem; 
+    }
+    ul{
+        padding-left: 3.5rem;
+        line-height: 1.5;
+        
     }
 
     img {
@@ -738,33 +778,6 @@ main.contact__containter{
             float: none;
             display: block;
             margin: 0 auto;    
-        }
-    }
-
-    a{
-        text-decoration: none;
-        color: $darkgray;
-        font-size: 1.5rem;
-        width: 16rem;
-        text-align: center;
-        font-weight: 400;
-
-        i{
-            padding-right: .7rem;
-        }
-
-        &.button{
-            margin-top: 1rem;
-            display: inline-block;
-            padding: 1rem;
-            border: 1px solid $buttoncolor;
-            border-radius: 3px;
-            transition: all .4s ease-out;
-            &:hover{
-                background: $buttoncolor;
-                font-size: 1.6rem;
-                color: white;
-            }
         }
     }
 }

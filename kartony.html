@@ -26,20 +26,10 @@
             <p>Przy projektowaniu opakowań korzystamy z katalogu FEFCO, ale możemy przygotować także rozwiązania niestandardowe, zgodnie z Państwa życzeniem. Do produkcji wykorzystujemy tekturę szarą oraz białą, trój- lub pięciowarstwową. Najczęściej stosowane fale to: B,C,BC,BE oraz E. Tektura stosowana do produkcji opakowań kartonowych pochodzi tylko od renomowanych producentów, gdyż zależy nam na wysokiej i powtarzalnej jakości surowca.</p>
         </article>
         
-        <aside class="sitebar">
-            <h3>Zobacz również:</h3>
-            <ul>
-                <li><a href="opakowania.html">Opakowania kartonowe</a></li>
-                <li><a href="#">Wypełniacze</a></li>
-                <li><a href="#">Art. z tektury litej</a></li>
-                <li><a href="#">Taśmy pakowe</a></li>
-                <li><a href="#">Folie stretch</a></li>
-                <li><a href="#">Folie bąbelkowe</a></li>
-                <li><a href="#">Koperty</a></li>
-                <li><a href="#">Palety</a></li>
-            </ul>
-        </aside>
+
+        <aside id="includeSitebar" class="sitebar"></aside>
         
+
         <section class="product">
             <div class="product__row">
 
@@ -68,6 +58,7 @@
 
     <script>
         $("#includeHeader").load("html/header.html");
+        $("#includeSitebar").load("html/sitebar.html");
         $("#includeFooter").load("html/footer.html");
     </script> 
 </body>
