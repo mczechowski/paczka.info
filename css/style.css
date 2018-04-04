@@ -259,7 +259,7 @@ header .main__header {
 /*---------------------------- HOME PAGE -------------------------------*/
 .banner {
   background-color: #cccccc;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner-backgr.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner-backgr-min.jpg") center;
   margin-top: 2rem;
   display: flex;
 }
