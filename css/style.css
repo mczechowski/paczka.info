@@ -835,4 +835,15 @@ main.contact__containter {
     margin: 0 auto;
   }
 }
+
+.product__item .img__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product__item .img__gallery img {
+  width: 15rem;
+  box-shadow: 1px 1px 3px 1px #9c9c9c;
+}
 /*# sourceMappingURL=style.css.map */

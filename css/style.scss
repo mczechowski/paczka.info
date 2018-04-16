@@ -805,5 +805,16 @@ main.contact__containter{
             margin: 0 auto;    
         }
     }
+
+    .img__gallery{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        img {
+            width: 15rem;
+         //   border: 1px solid black;
+            box-shadow: 1px 1px 3px 1px rgba(156,156,156,1);
+        }
+    }
 }
 
