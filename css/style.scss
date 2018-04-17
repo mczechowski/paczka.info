@@ -679,6 +679,7 @@ main.contact__containter{
 
         &.button{
             margin-top: 1rem;
+            margin-bottom: 2rem;
             display: inline-block;
             padding: 1rem;
             border: 1px solid $buttoncolor;
@@ -787,6 +788,7 @@ main.contact__containter{
     }
     p{
         padding-bottom: 1rem; 
+        line-height: 1.6;
     }
     ul{
         padding-left: 3.5rem;
@@ -799,6 +801,7 @@ main.contact__containter{
         height: auto;
         width: 17rem;
         margin-top: 2rem;
+        padding-right: 1rem;
         @media screen and(max-width: 500px) {
             float: none;
             display: block;
@@ -810,9 +813,11 @@ main.contact__containter{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        
         img {
             width: 15rem;
-         //   border: 1px solid black;
+            padding-right: 0rem;
+           // border: 1px solid black;
             box-shadow: 1px 1px 3px 1px rgba(156,156,156,1);
         }
     }

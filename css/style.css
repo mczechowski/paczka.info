@@ -703,6 +703,7 @@ main.contact__containter {
 
 .product__content a.button {
   margin-top: 1rem;
+  margin-bottom: 2rem;
   display: inline-block;
   padding: 1rem;
   border: 1px solid #45af14;
@@ -814,6 +815,7 @@ main.contact__containter {
 
 .product__item p {
   padding-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .product__item ul {
@@ -826,6 +828,7 @@ main.contact__containter {
   height: auto;
   width: 17rem;
   margin-top: 2rem;
+  padding-right: 1rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -844,6 +847,7 @@ main.contact__containter {
 
 .product__item .img__gallery img {
   width: 15rem;
+  padding-right: 0rem;
   box-shadow: 1px 1px 3px 1px #9c9c9c;
 }
 /*# sourceMappingURL=style.css.map */
