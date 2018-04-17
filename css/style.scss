@@ -801,7 +801,7 @@ main.contact__containter{
         height: auto;
         width: 17rem;
         margin-top: 2rem;
-        padding-right: 1rem;
+        padding-right: 2rem;
         @media screen and(max-width: 500px) {
             float: none;
             display: block;
@@ -813,12 +813,24 @@ main.contact__containter{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        
+        @media screen and(max-width: 671px) {
+             justify-content: center;
+        }
+        a{
+            width: 15rem;
+            margin-right: 2rem;
+            margin-top: 2rem;
+        }
         img {
             width: 15rem;
             padding-right: 0rem;
-           // border: 1px solid black;
+            margin-top: 0rem;
             box-shadow: 1px 1px 3px 1px rgba(156,156,156,1);
+            transition: all .2s ease-in;
+
+            &:hover{
+                box-shadow: 2px 2px 4px 1px $hovercolor;
+            }
         }
     }
 }

@@ -828,7 +828,7 @@ main.contact__containter {
   height: auto;
   width: 17rem;
   margin-top: 2rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -845,9 +845,27 @@ main.contact__containter {
   align-items: center;
 }
 
+@media screen and (max-width: 671px) {
+  .product__item .img__gallery {
+    justify-content: center;
+  }
+}
+
+.product__item .img__gallery a {
+  width: 15rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
 .product__item .img__gallery img {
   width: 15rem;
   padding-right: 0rem;
+  margin-top: 0rem;
   box-shadow: 1px 1px 3px 1px #9c9c9c;
+  transition: all .2s ease-in;
+}
+
+.product__item .img__gallery img:hover {
+  box-shadow: 2px 2px 4px 1px #ec9821;
 }
 /*# sourceMappingURL=style.css.map */
